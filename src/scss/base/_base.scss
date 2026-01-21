@@ -1,0 +1,43 @@
+:root {
+    --bg-body: #FFFFFF;
+    --text-main: #333333;
+    --text-secondary: #555555;
+    --header-bg: #FFFFFF;
+    --nav-text: #333333;
+    --mobile-menu-bg: #FFFFFF;
+    --about-text: #333;
+}
+
+[data-theme="dark"] {
+    --bg-body: #333333;
+    --text-main: #f0f0f0;
+    --text-secondary: #cccccc;
+    --header-bg: #333333;
+    --nav-text: #f0f0f0;
+    --mobile-menu-bg: #333333;
+    --about-text: #f0f0f0;  
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+}

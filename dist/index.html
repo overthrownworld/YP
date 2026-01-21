@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Кафе Ароматика</title>
+<link rel="stylesheet" href="css/main.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="hero">
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu left">
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#loyalty">Лояльность</a></li>
+                <li><a href="#booking">Бронировать</a></li>
+            </ul>
+
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../img/logo.svg" alt="Ароматика Лого">
+                </a>
+            </div>
+
+            <ul class="nav-menu right">
+                <li><a href="index2.html">Меню</a></li>
+                <li><a href="#delivery">Доставка</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+                <li class="desktop-theme-toggle">
+                    <button id="themeToggle" aria-label="Toggle Theme">
+                        🌙
+                    </button>
+                </li>
+            </ul>
+
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#loyalty">Лояльность</a></li>
+                <li><a href="#booking">Бронировать</a></li>
+                <li><a href="index2.html">Меню</a></li>
+                <li><a href="#delivery">Доставка</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+                <li class="mobile-theme-item">
+                    <button id="mobileThemeToggle" class="mobile-theme-btn">
+                        Сменить тему 🌙
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero-content">
+        <h1>КАФЕ АРОМАТИКА</h1>
+        <p>ГОРОДСКОЕ КАФЕ | КОФЕЙНЯ | НИЖНИЙ НОВГОРОД</p>
+    </div>
+
+    <a href="#about" class="scroll-down">
+        <svg width="30" height="20" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 2L12 12L22 2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    </a>
+</header>
+    <section id="about" class="about-section">
+    <a href="#delivery" class="delivery-banner">
+        ЗАКАЗАТЬ ДОСТАВКУ &rarr;
+    </a>
+
+    <div class="container">
+        <div class="about-content">
+            <h2 class="about-title">О КАФЕ</h2>
+            <div class="title-underline"></div>
+            
+            <div class="about-text-block">
+                <p class="about-text">
+                    Кафе «Ароматика» — место, где можно отвлечься от суеты. Мы разделяем вашу любовь к кофе, поэтому готовим каждую чашку из отборных свежемолотых зерен. 
+                </p>
+                <p class="about-text">
+                    Наши бариста создадут для вас как классический эспрессо, так и уникальный авторский напиток.
+                </p>
+                <p class="about-text">
+                    Это место, куда хочется возвращаться. Место для влюбленных в кофе... и друг в друга.
+                </p>
+            </div>
+
+            <button class="join-btn">Присоединяйся к нам!</button>
+        </div>
+    </div>
+    <div class="zigzag-divider"></div>
+</section>
+    <section class="offers-section">
+    <div class="container">
+        <div class="offer-item">
+            <div class="offer-image-wrapper">
+                <img src="../img/kids.png" alt="Детское меню" class="offer-img">
+            </div>
+            <div class="offer-text-wrapper">
+                <h3 class="offer-title">Детское меню бесплатно <br> в Ароматике</h3>
+                <p class="offer-text">Предложение действует при заказе от 1000 рублей — на одного взрослого гостя по будням / для детей.</p>
+                <p class="offer-text">Для детей в Ароматике не только бесплатное детское меню по будням, но и увлекательные мастер-классы.</p>
+                <p class="offer-text">Просто переходите по ссылке, выбирайте понравившийся мастер-класс и записывайтесь!</p>
+                <p class="offer-text">Наши администраторы обязательно свяжутся с вами за 2 дня до мероприятия для подтверждения участия.</p>
+                <a href="#" class="offer-btn">Выбрать мастер-класс</a>
+            </div>
+        </div>
+
+        <div class="offer-item">
+            <div class="offer-image-wrapper">
+                <img src="../img/business-lunch.png" alt="Бизнес-ланчи" class="offer-img">
+            </div>
+            <div class="offer-text-wrapper">
+                <h3 class="offer-title">Бизнес-ланчи в Ароматике — <br> с 17 ноября!</h3>
+                <p class="offer-text">С 17 ноября в нашем уютном кафе на Большой Покровской стартуют бизнес-ланчи от 300₽. Вкусно, быстро и с заботой — именно так, как вы любите.</p>
+                <p class="offer-text">А чтобы начало недели было особенно приятным, первым пяти гостям в понедельник, 17 ноября, дарим ланч из двух блюд!</p>
+                <p class="offer-text">Приходите на обед с коллегами, друзьями или просто сделать паузу в делах.</p>
+                <p class="offer-text bold-text">Бизнес-ланчи — каждый будний день с 12:00 до 15:00</p>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="promo-section">
+    <div class="container">
+        <h2 class="promo-title">АКЦИИ И ПРЕДЛОЖЕНИЯ</h2>
+        <p class="promo-subtitle">*акции не суммируются</p>
+
+        <div class="promo-grid">
+            <div class="promo-card">
+                <img src="../img/early-birds.png" alt="Ранние пташки" class="promo-img">
+                <div class="promo-hover-text">Подробнее →</div>
+            </div>
+
+            <div class="promo-card">
+                <img src="../img/Group 28 (1).png" alt="Обед с коллегами" class="promo-img">
+                <div class="promo-hover-text">Подробнее →</div>
+            </div>
+
+            <div class="promo-card">
+                <img src="../img/special-dessert.png" alt="Спешл десерт" class="promo-img">
+                <div class="promo-hover-text">Подробнее →</div>
+            </div>
+        </div>
+        
+        <p class="promo-footer-text">Бизнес-ланчи в Кафе Ароматика — с 17 ноября!</p>
+    </div>
+</section>
+    <section class="franchise-section">
+    <div class="container">
+        <div class="franchise-wrapper">
+            <div class="franchise-content">
+                <h2 class="franchise-title">Нравится в Кафе Ароматика? Откройте свою кофейню!</h2>
+                
+                <div class="franchise-description">
+                    <p>Начните прибыльный бизнес - откройте кофейню Ароматика в своем городе!</p>
+                    <p>Мы внедряем технологии, обучаем и сопровождаем запуск: от дизайн-проекта до закупки продуктов. Вы же будете управлять кофейней и получать прибыль!</p>
+                </div>
+
+                <a href="#" class="details-btn">Подробнее</a>
+            </div>
+
+            <div class="franchise-slider">
+                <div class="slider-track">
+                    <div class="slider-item active"></div>
+                    <div class="slider-item"></div>
+                    <div class="slider-item"></div>
+                </div>
+                
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="loyalty" class="loyalty-section">
+    <div class="container">
+        <div class="loyalty-wrapper">
+            <div class="loyalty-image-container">
+                <img src="../img/interier.png" alt="Атмосфера кафе" class="loyalty-img">
+            </div>
+
+            <div class="loyalty-content">
+                <h2 class="loyalty-main-title">ПРОГРАММА ЛОЯЛЬНОСТИ</h2>
+                
+                <div class="loyalty-block">
+                    <p class="loyalty-intro">Программа лояльности позволит:</p>
+                    <ul class="loyalty-list">
+                        <li>Оплачивать бонусами до 30% от суммы заказа</li>
+                        <li>Получить 100% кэшбэк на 1 заказ (бонусы сгорят через 10 дней после начисления, успейте использовать!)</li>
+                        <li>Кэшбэк от 5 до 15% с каждого чека в ресторане</li>
+                    </ul>
+                </div>
+
+                <div class="loyalty-block">
+                    <p class="loyalty-subtitle">ВАШИ ВОЗМОЖНОСТИ</p>
+                    <ul class="loyalty-list">
+                        <li>Скидка 20% в День рождения 3 дня до и 3 дня после</li>
+                        <li>6-ой кофе в подарок</li>
+                    </ul>
+                    <p class="loyalty-highlight">Заходите к нам за отличным кофе, 6-ой будет в подарок!</p>
+                </div>
+
+                <p class="loyalty-expiry">Бонусы активны в течение 365 дней со дня последнего посещения</p>
+
+                <div class="loyalty-block">
+                    <p class="loyalty-intro">Уровни участия в программе (% кэшбэка со второй покупки):</p>
+                    <ul class="loyalty-list">
+                        <li>Кэшбэк 5% — Гость Coffee Cake и Бенье</li>
+                        <li>Кэшбэк 10% — друг Coffee Cake и Бенье</li>
+                        <li>Кэшбэк 15% — Близкие друзья</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="contacts" class="contacts-section">
+        <div id="map" class="map-bg"></div>
+
+        <div class="container">
+            <div class="contacts-card">
+                <h2>ЗАХОДИТЕ К НАМ</h2>
+                
+                <div class="contact-item">
+                    <p class="address">ул. Большая Покровская, 2</p>
+                    <p class="phone">+7 (903) 604-76-90</p>
+                    <p class="hours">Режим работы:<br>вс-чт 8:00 - 22:00<br>пт-сб 8:00 - 00:00</p>
+                </div>
+
+                <div class="contact-item">
+                    <p class="address">Аэропорт "Стригино"</p>
+                    <p class="phone">+7 (903) 604-76-90</p>
+                    <p class="hours">Режим работы: круглосуточно</p>
+                </div>
+
+                <div class="contact-item">
+                    <p class="address">Бабл Ти парк "Швейцария"</p>
+                    <p class="phone">+7 (903) 604-76-90</p>
+                    <p class="hours">Режим работы: Ежедневно 10:00 - 21:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Компания</h4>
+                <ul class="footer-links">
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#">СМИ</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#contacts">Адреса</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Кофе</h4>
+                <ul class="footer-links">
+                    <li><a href="index2.html">Напитки</a></li>
+                    <li><a href="#">Домой</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Партнерство</h4>
+                <ul class="footer-links">
+                    <li><a href="#franchise">Франшиза</a></li>
+                    <li><a href="#">Поставщики</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Работа</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Бариста</a></li>
+                    <li><a href="#">Тайный гость</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact-info">
+                <a href="tel:+79036047690" class="f-phone">+7 (903) 604-76-90</a>
+                <p class="f-sub">Звонок по России бесплатный</p>
+                <a href="mailto:aromatica-coffee@yandex.ru" class="f-email">aromatica-coffee@yandex.ru</a>
+
+                <div class="social-links">
+                    <a href="#" class="social-icon">VK</a>
+                    <a href="#" class="social-icon">TG</a>
+                </div>
+
+                <div class="legal-info">
+                    <p>ИНН 1832114281</p>
+                    <a href="#" class="privacy">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+
+</html>

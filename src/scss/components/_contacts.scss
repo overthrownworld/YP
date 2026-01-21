@@ -1,0 +1,64 @@
+.contacts-section {
+    position: relative;
+    height: 700px;
+
+    @media (max-width: 767px) {
+        height: auto;
+        padding-bottom: 40px;
+    }
+}
+
+.map-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/map.png);
+    background-size: cover;
+    background-position: center;
+
+    @media (max-width: 767px) {
+        position: relative;
+        height: 300px;
+    }
+}
+
+.contacts-card {
+    position: relative;
+    z-index: 10;
+    background: #FFFFFF;
+    padding: 50px;
+    width: 450px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background-color: #72BFC9;
+
+    color: #FFFFFF;
+    max-width: 350px;
+
+    .contact-item {
+        margin-top: 15px;
+        font-size: 14px;
+        color: #FFFFFF;
+    }
+
+    @media (max-width: 767px) {
+        width: 100%;
+        max-width: 100%;
+        padding: 30px;
+        margin-top: -30px; // Pull up over map
+        border-radius: 15px 15px 0 0;
+        margin-left: 0;
+        margin-right: 0;
+        box-shadow: none;
+    }
+}
+
+.container {
+    padding-top: 110px;
+
+    @media (max-width: 767px) {
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

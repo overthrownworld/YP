@@ -1,0 +1,105 @@
+.offers-section {
+    background-color: #72BFC9;
+    padding: 100px 0;
+    color: #FFFFFF;
+    font-family: 'Arial', sans-serif;
+
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    @media (max-width: 767px) {
+        padding: 50px 0;
+    }
+}
+
+.offer-item {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 120px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    @media (max-width: 767px) {
+        flex-direction: column !important; // Force column on mobile
+        gap: 30px;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+}
+
+.offer-image-wrapper {
+    flex: 1;
+
+    .offer-img {
+        width: 100%;
+        max-width: 450px;
+        border-radius: 20px;
+        display: block;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+        @media (max-width: 767px) {
+            max-width: 100%;
+        }
+    }
+}
+
+.offer-text-wrapper {
+    flex: 1.2;
+
+    .offer-title {
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 1.3;
+        margin-bottom: 25px;
+        text-transform: none;
+
+        @media (max-width: 767px) {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .offer-text {
+        font-size: 15px;
+        line-height: 1.5;
+        margin-bottom: 15px;
+        font-weight: 500;
+
+        &.bold-text {
+            font-weight: 700;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 14px;
+        }
+    }
+}
+
+.offer-btn {
+    display: inline-block;
+    background-color: #FFFFFF;
+    color: #72BFC9;
+    padding: 12px 35px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #f0f0f0;
+        transform: translateY(-2px);
+    }
+}

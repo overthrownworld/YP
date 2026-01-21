@@ -1,0 +1,80 @@
+.accordion {
+    margin: 40px 0;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+
+    body.dark-theme & {
+        border-color: #444;
+    }
+}
+
+.accordion-header {
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background: rgba(0, 0, 0, 0.02);
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.05);
+    }
+
+    body.dark-theme & {
+        background: rgba(255, 255, 255, 0.05);
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+    }
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 20px;
+
+    ul li {
+        padding: 10px 0;
+        border-bottom: 1px dashed #eee;
+
+        body.dark-theme & {
+            border-bottom-color: #444;
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 500px; // Value large enough
+    padding-bottom: 20px;
+}
+
+.product-img {
+    height: 200px;
+    background: #ddd;
+    margin-bottom: 15px;
+}
+
+.product-name {
+    padding: 0 15px;
+    font-size: 1.2rem;
+}
+
+.product-price {
+    padding: 5px 15px;
+    color: $primary-color;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.product-controls {
+    padding: 15px;
+}
